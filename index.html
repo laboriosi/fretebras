@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <style>
+        @font-face {
+          font-family: 'Satoshi';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 400;
+          src: url('https://raw.githubusercontent.com/laboriosi/fretebras/main/fonts/Satoshi-Regular.woff2') format('woff2'),url('https://raw.githubusercontent.com/laboriosi/fretebras/main/fonts/Satoshi-Regular.woff') format('woff');
+        }
+      
+        @font-face {
+          font-family: 'Satoshi';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 500;
+          src: url('https://raw.githubusercontent.com/laboriosi/fretebras/main/fonts/Satoshi-Medium.woff2') format('woff2'), url('https://raw.githubusercontent.com/laboriosi/fretebras/main/fonts/Satoshi-Medium.woff') format('woff');
+        }
+      
+        @font-face {
+          font-family: 'Satoshi';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 700;
+          src: url('https://raw.githubusercontent.com/laboriosi/fretebras/main/fonts/Satoshi-Bold.woff2') format('woff2'), url('https://raw.githubusercontent.com/laboriosi/fretebras/main/fonts/Satoshi-Bold.woff') format('woff');
+        }
+
+        .banner {
+          width: 100%; 
+          position:relative; 
+          height: 100%;
+        }
+
+        .banner-description {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          bottom: 40px;
+        }
+
+        .banner-paragraph {
+          color: #fff;
+          font-weight: bold;
+          padding: 0px 24px;
+          font-size: 32px;
+        }
+
+        .link-wrapper {
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        img {
+          height: 100%;
+        }
+
+        img.banner-image-mobile {
+          margin-left: -24px;
+          width: calc(100% + 48px);
+          border-radius: 0;
+
+          @media (min-width: 361px) {
+              display: none;
+          }
+        }
+
+        .banner-image-tablet {
+          @media (max-width: 360px), (min-width: 1024px)  {
+              display: none;
+          }
+        }
+
+        .banner-image-desktop {
+          @media (max-width: 1023px) {
+              display: none;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <header role="banner" class="banner">
+        <a class="link-wrapper" href="https://novacentral.fretebras.com.br/gestao-de-risco">
+          <img src="https://i.ibb.co/BVMJpXw/risk-management-banner-desktop.png" alt="men shaking hands" width="100%;" class="banner-image-desktop" />
+          <img src="https://i.ibb.co/PzLYLpW/risk-management-banner-mobile.png" alt="men shaking hands" width="100%;" class="banner-image-tablet" />
+          <img src="https://i.ibb.co/tBVLr67/risk-management-banner-tablet.png" alt="men shaking hands" width="100%;" class="banner-image-mobile" />
+          <article class="banner-description">
+            <p class="banner-paragraph">Gerenciamento de Risco Fretebras: Reduza 60% nos seus custos com GR</p>
+          </article>
+        </a>
+      </header>
+    </body>
+  </html>
